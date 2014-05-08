@@ -5,5 +5,5 @@ if($_SERVER["SERVER_NAME"] == "localhost"){
 }else{
     $show = false;
 }
-init_set('display_errors', $show);
+ini_set('display_errors', $show);
 error_reporting(E_ALL);
