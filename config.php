@@ -7,3 +7,7 @@ if($_SERVER["SERVER_NAME"] == "localhost"){
 }
 ini_set('display_errors', $show);
 error_reporting(E_ALL);
+
+if($_SERVER["SERVER_NAME"] == "localhost"){
+    echo "<script>console.log('Nombre de base de datos: {$nombre_db}');</script>";
+}
