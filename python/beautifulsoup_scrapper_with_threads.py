@@ -6,7 +6,9 @@ GOOGLE_NEWS_URL = 'https://news.google.com/search?q=panama&hl=es-419&gl=US&ceid=
 
 def set_robot(article):
         title = article.find('a', {'class':'DY5T1d'} ).getText()
+        href = article.find('a').get('href')
         print title
+        print href
 
 def scraping_site():
         re = requests.get( GOOGLE_NEWS_URL )
