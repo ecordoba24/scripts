@@ -18,8 +18,6 @@ def scraping_site():
 
                         for article in articles:
                                 robot = threading.Thread( name = 'set_robot', target = set_robot, args = (article,) )
-                                #title = article.find('a', {'class':'DY5T1d'} ).getText()
-                                #print title
                                 robot.start()
 
 if __name__ == '__main__':
